@@ -15,11 +15,6 @@
   >
 
   <style>
-
-    /* =========================================================
-       VARIABLES
-    ========================================================= */
-
     :root {
       --bg: #f7f5f2;
       --surface: #ffffff;
@@ -31,11 +26,6 @@
       --border: #ddd6cf;
       --dark: #211e1b;
     }
-
-
-    /* =========================================================
-       RESET
-    ========================================================= */
 
     * {
       margin: 0;
@@ -64,11 +54,6 @@
       text-decoration: none;
       color: inherit;
     }
-
-
-    /* =========================================================
-       GLOBAL
-    ========================================================= */
 
     .container {
       width: min(1180px, 90%);
@@ -103,29 +88,22 @@
       line-height: 1.8;
     }
 
-
-    /* =========================================================
-       NAVIGATION
-    ========================================================= */
+    /* NAVIGATION */
 
     header {
       position: sticky;
       top: 0;
       z-index: 1000;
-
       background: rgba(247, 245, 242, 0.92);
       border-bottom: 1px solid rgba(221, 214, 207, 0.65);
-
       backdrop-filter: blur(16px);
     }
 
     nav {
       min-height: 76px;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       gap: 30px;
     }
 
@@ -137,17 +115,14 @@
 
     .nav-links {
       list-style: none;
-
       display: flex;
       align-items: center;
-
       gap: 35px;
     }
 
     .nav-links a {
       color: var(--muted);
       font-size: 0.93rem;
-
       transition: color 0.2s ease;
     }
 
@@ -155,25 +130,17 @@
       color: var(--accent);
     }
 
-
-    /* =========================================================
-       BUTTONS
-    ========================================================= */
+    /* BUTTONS */
 
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-
       padding: 14px 25px;
-
       border-radius: 100px;
-
       background: var(--accent);
       color: white;
-
       font-weight: 500;
-
       transition:
         transform 0.25s ease,
         background 0.25s ease,
@@ -182,117 +149,77 @@
 
     .btn:hover {
       transform: translateY(-3px);
-
       background: var(--accent-dark);
-
-      box-shadow:
-        0 12px 30px rgba(78, 56, 43, 0.17);
+      box-shadow: 0 12px 30px rgba(78, 56, 43, 0.17);
     }
 
     .text-link {
       display: inline-block;
-
       padding-bottom: 3px;
-
       font-weight: 500;
-
       border-bottom: 1px solid currentColor;
     }
 
-
-    /* =========================================================
-       HERO
-    ========================================================= */
+    /* HERO */
 
     .hero {
       min-height: calc(100vh - 76px);
-
       display: flex;
       align-items: center;
-
       padding: 80px 0;
     }
 
     .hero-grid {
       display: grid;
-
       grid-template-columns: 1.2fr 0.8fr;
-
       align-items: center;
-
       gap: 90px;
     }
 
     .hero h1 {
       font-family: "Playfair Display", serif;
-
       font-size: clamp(3.7rem, 8vw, 7.2rem);
-
       font-weight: 500;
-
       line-height: 0.94;
-
       letter-spacing: -4px;
     }
 
     .hero h1 span {
       display: block;
-
       color: var(--accent);
-
       font-style: italic;
     }
 
     .hero-text {
       max-width: 620px;
-
       margin-top: 30px;
-
       color: var(--muted);
-
       font-size: 1.1rem;
-
       line-height: 1.8;
     }
 
     .hero-actions {
       display: flex;
       align-items: center;
-
       flex-wrap: wrap;
-
       gap: 22px;
-
       margin-top: 35px;
     }
 
-
-    /* =========================================================
-       HERO PHOTO
-    ========================================================= */
-
     .hero-visual {
       min-height: 510px;
-
       position: relative;
-
       border-radius: 30px;
-
       overflow: hidden;
-
       background: var(--accent);
-
-      box-shadow:
-        0 35px 80px rgba(60, 45, 35, 0.16);
+      box-shadow: 0 35px 80px rgba(60, 45, 35, 0.16);
     }
 
     .hero-visual img {
       width: 100%;
       height: 100%;
-
       position: absolute;
       inset: 0;
-
       object-fit: cover;
       object-position: center top;
     }
@@ -300,7 +227,6 @@
     .hero-overlay {
       position: absolute;
       inset: 0;
-
       background:
         linear-gradient(
           to top,
@@ -311,40 +237,28 @@
 
     .hero-photo-copy {
       position: absolute;
-
       left: 35px;
       right: 35px;
       bottom: 35px;
-
       color: white;
     }
 
     .hero-photo-copy span {
       display: block;
-
       margin-bottom: 8px;
-
       font-size: 0.7rem;
-
       letter-spacing: 2.5px;
-
       text-transform: uppercase;
-
       opacity: 0.72;
     }
 
     .hero-photo-copy p {
       font-family: "Playfair Display", serif;
-
       font-size: 2rem;
-
       line-height: 1.15;
     }
 
-
-    /* =========================================================
-       ABOUT
-    ========================================================= */
+    /* ABOUT */
 
     .about {
       background: white;
@@ -352,11 +266,8 @@
 
     .about-grid {
       display: grid;
-
       grid-template-columns: 0.75fr 1.25fr;
-
       gap: 90px;
-
       align-items: center;
     }
 
@@ -366,121 +277,83 @@
 
     .about-photo {
       overflow: hidden;
-
       border-radius: 25px;
-
       aspect-ratio: 4 / 5;
-
       background: var(--soft);
     }
 
     .about-photo img {
       width: 100%;
       height: 100%;
-
       object-fit: cover;
-      object-position: center top;
+      object-position: center;
     }
 
     .about-photo-note {
       position: absolute;
-
       right: -25px;
       bottom: 30px;
-
       padding: 18px 22px;
-
       background: var(--accent);
       color: white;
-
       border-radius: 15px;
-
       font-family: "Playfair Display", serif;
       font-size: 1.15rem;
-
-      box-shadow:
-        0 18px 40px rgba(60, 45, 35, 0.15);
+      box-shadow: 0 18px 40px rgba(60, 45, 35, 0.15);
     }
 
     .about-large {
       font-family: "Playfair Display", serif;
-
       font-size: clamp(2rem, 4vw, 3.1rem);
-
       line-height: 1.27;
-
       margin-bottom: 30px;
     }
 
     .about-content > p:not(.about-large):not(.eyebrow) {
       max-width: 720px;
-
       color: var(--muted);
-
       margin-bottom: 20px;
-
       font-size: 1.05rem;
-
       line-height: 1.8;
     }
 
     .skill-list {
       display: flex;
-
       flex-wrap: wrap;
-
       gap: 10px;
-
       margin-top: 35px;
     }
 
     .skill {
       padding: 9px 15px;
-
       border-radius: 100px;
-
       border: 1px solid var(--border);
-
       color: var(--muted);
-
       font-size: 0.82rem;
     }
 
-
-    /* =========================================================
-       SERVICES
-    ========================================================= */
+    /* SERVICES */
 
     .services-header {
       display: flex;
-
       align-items: flex-end;
       justify-content: space-between;
-
       gap: 50px;
-
       margin-bottom: 60px;
     }
 
     .services-grid {
       display: grid;
-
       grid-template-columns: repeat(3, 1fr);
-
       gap: 20px;
     }
 
     .service-card {
       min-height: 315px;
-
       padding: 38px;
-
       border-radius: 22px;
-
       border: 1px solid var(--border);
-
       background: white;
-
       transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
@@ -488,45 +361,32 @@
 
     .service-card:hover {
       transform: translateY(-7px);
-
-      box-shadow:
-        0 22px 50px rgba(50, 40, 30, 0.08);
+      box-shadow: 0 22px 50px rgba(50, 40, 30, 0.08);
     }
 
     .service-number {
       color: var(--accent);
-
       font-size: 0.75rem;
-
       letter-spacing: 2px;
-
       margin-bottom: 65px;
     }
 
     .service-card h3 {
       font-family: "Playfair Display", serif;
-
       font-size: 1.7rem;
-
       font-weight: 500;
-
       margin-bottom: 15px;
     }
 
     .service-card p {
       color: var(--muted);
-
       line-height: 1.75;
     }
 
-
-    /* =========================================================
-       WORK
-    ========================================================= */
+    /* WORK */
 
     .work {
       background: var(--dark);
-
       color: white;
     }
 
@@ -536,31 +396,20 @@
 
     .work .section-description {
       color: #aaa49e;
-
       margin-top: 25px;
     }
 
     .projects {
       margin-top: 70px;
-
       display: flex;
       flex-direction: column;
-
       gap: 90px;
     }
 
-
-    /* =========================================================
-       PROJECTS
-    ========================================================= */
-
     .project {
       display: grid;
-
       grid-template-columns: 1.45fr 0.55fr;
-
       gap: 50px;
-
       align-items: center;
     }
 
@@ -578,18 +427,13 @@
 
     .project-image {
       overflow: hidden;
-
       border-radius: 24px;
-
       background: white;
-
-      box-shadow:
-        0 25px 65px rgba(0, 0, 0, 0.22);
+      box-shadow: 0 25px 65px rgba(0, 0, 0, 0.22);
     }
 
     .project-image img {
       width: 100%;
-
       transition: transform 0.6s ease;
     }
 
@@ -599,80 +443,54 @@
 
     .project-number {
       color: #9d948c;
-
       font-size: 0.73rem;
-
       letter-spacing: 2px;
-
       text-transform: uppercase;
-
       margin-bottom: 14px;
     }
 
     .project-title {
       font-family: "Playfair Display", serif;
-
       font-size: clamp(2.4rem, 4vw, 3.8rem);
-
       font-weight: 500;
-
       line-height: 1;
-
       margin-bottom: 13px;
     }
 
     .project-category {
       color: #b9b2ac;
-
       font-size: 0.86rem;
-
       margin-bottom: 25px;
     }
 
     .project-description {
       color: #aaa49e;
-
       line-height: 1.8;
-
       margin-bottom: 25px;
     }
 
     .project-tags {
       display: flex;
-
       flex-wrap: wrap;
-
       gap: 8px;
-
       margin-bottom: 30px;
     }
 
     .project-tag {
       padding: 7px 12px;
-
       border-radius: 100px;
-
       border: 1px solid #4e4842;
-
       color: #c9c2bc;
-
       font-size: 0.72rem;
     }
 
     .project-link {
       display: inline-flex;
-
       align-items: center;
-
       gap: 10px;
-
       padding-bottom: 4px;
-
-      border-bottom:
-        1px solid rgba(255, 255, 255, 0.4);
-
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
       font-weight: 500;
-
       transition:
         gap 0.2s ease,
         color 0.2s ease;
@@ -680,30 +498,22 @@
 
     .project-link:hover {
       gap: 15px;
-
       color: #d8c0af;
     }
 
     .store-note {
       margin-top: 17px;
-
       color: #8f8984;
-
       font-size: 0.78rem;
-
       line-height: 1.6;
     }
 
     .store-note strong {
       color: #cbb5a5;
-
       font-weight: 500;
     }
 
-
-    /* =========================================================
-       APPROACH
-    ========================================================= */
+    /* APPROACH */
 
     .approach {
       background: white;
@@ -711,48 +521,63 @@
 
     .approach-grid {
       display: grid;
-
-      grid-template-columns: 0.8fr 1.2fr;
-
-      gap: 90px;
-
+      grid-template-columns: 0.82fr 1.18fr;
+      gap: 85px;
       align-items: center;
     }
 
+    .approach-visual {
+      position: relative;
+    }
+
+    .approach-image {
+      position: relative;
+      overflow: hidden;
+      border-radius: 28px;
+      aspect-ratio: 4 / 5;
+      background: var(--soft);
+      box-shadow: 0 30px 70px rgba(55, 40, 30, 0.1);
+    }
+
+    .approach-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.6s ease;
+    }
+
+    .approach-image:hover img {
+      transform: scale(1.025);
+    }
+
     .approach-number {
+      position: absolute;
+      left: -55px;
+      bottom: -40px;
+      z-index: 2;
       font-family: "Playfair Display", serif;
-
-      font-size: clamp(7rem, 15vw, 13rem);
-
-      line-height: 1;
-
-      color: var(--soft);
+      font-size: clamp(7rem, 12vw, 11rem);
+      line-height: 0.8;
+      color: rgba(108, 79, 61, 0.16);
+      pointer-events: none;
     }
 
     .approach-content h2 {
       font-family: "Playfair Display", serif;
-
       font-size: clamp(2.3rem, 5vw, 4.2rem);
-
       font-weight: 500;
-
       line-height: 1.12;
-
       margin-bottom: 25px;
     }
 
     .approach-content p {
-      max-width: 600px;
-
+      max-width: 620px;
       color: var(--muted);
-
       line-height: 1.85;
     }
 
-
-    /* =========================================================
-       CONTACT
-    ========================================================= */
+    /* CONTACT */
 
     .contact {
       text-align: center;
@@ -760,24 +585,18 @@
 
     .contact-box {
       padding: 100px 30px;
-
       border-radius: 35px;
-
       background: var(--soft);
     }
 
     .contact-box .section-description {
-      margin:
-        25px auto 35px;
+      margin: 25px auto 35px;
     }
 
     .contact-email {
       display: block;
-
       margin-top: 20px;
-
       color: var(--muted);
-
       font-size: 0.9rem;
     }
 
@@ -785,34 +604,23 @@
       color: var(--accent);
     }
 
-
-    /* =========================================================
-       FOOTER
-    ========================================================= */
+    /* FOOTER */
 
     footer {
       padding: 32px 0;
-
       border-top: 1px solid var(--border);
     }
 
     .footer-content {
       display: flex;
-
       align-items: center;
       justify-content: space-between;
-
       gap: 20px;
-
       color: var(--muted);
-
       font-size: 0.87rem;
     }
 
-
-    /* =========================================================
-       RESPONSIVE
-    ========================================================= */
+    /* RESPONSIVE */
 
     @media (max-width: 950px) {
 
@@ -858,7 +666,6 @@
       .project,
       .project:nth-child(even) {
         grid-template-columns: 1fr;
-
         gap: 35px;
       }
 
@@ -867,8 +674,19 @@
         order: initial;
       }
 
-    }
+      .approach-visual {
+        max-width: 520px;
+      }
 
+      .approach-image {
+        aspect-ratio: 5 / 4;
+      }
+
+      .approach-number {
+        left: -20px;
+        bottom: -25px;
+      }
+    }
 
     @media (max-width: 700px) {
 
@@ -907,12 +725,24 @@
 
       .services-header {
         flex-direction: column;
-
         align-items: flex-start;
       }
 
       .projects {
         gap: 75px;
+      }
+
+      .approach-grid {
+        gap: 65px;
+      }
+
+      .approach-image {
+        aspect-ratio: 1 / 1;
+      }
+
+      .approach-number {
+        left: 15px;
+        bottom: -25px;
       }
 
       .contact-box {
@@ -921,12 +751,9 @@
 
       .footer-content {
         flex-direction: column;
-
         text-align: center;
       }
-
     }
-
 
     @media (max-width: 480px) {
 
@@ -949,77 +776,55 @@
         font-size: 1.6rem;
       }
 
+      .approach-number {
+        font-size: 6.5rem;
+      }
     }
-
   </style>
 </head>
 
-
 <body>
 
-
-  <!-- =========================================================
-       NAVIGATION
-  ========================================================= -->
+  <!-- NAVIGATION -->
 
   <header>
-
     <div class="container">
-
       <nav>
 
         <a href="#home" class="logo">
           Ilona.
         </a>
 
-
         <ul class="nav-links">
-
           <li>
-            <a href="#about">
-              About
-            </a>
+            <a href="#about">About</a>
           </li>
 
           <li>
-            <a href="#services">
-              What I Do
-            </a>
+            <a href="#services">What I Do</a>
           </li>
 
           <li>
-            <a href="#work">
-              Work
-            </a>
+            <a href="#work">Work</a>
           </li>
 
           <li>
-            <a href="#contact">
-              Contact
-            </a>
+            <a href="#contact">Contact</a>
           </li>
-
         </ul>
 
       </nav>
-
     </div>
-
   </header>
-
 
 
   <main>
 
-
-    <!-- =======================================================
-         HERO
-    ======================================================== -->
+    <!-- HERO -->
 
     <section class="hero" id="home">
 
       <div class="container hero-grid">
-
 
         <div>
 
@@ -1027,34 +832,23 @@
             Web Design · Shopify · Front-end
           </p>
 
-
           <h1>
-
             I turn ideas into
-
-            <span>
-              digital experiences.
-            </span>
-
+            <span>digital experiences.</span>
           </h1>
 
-
           <p class="hero-text">
-
             I'm Ilona Shahbazyan, a web designer creating
             distinctive Shopify stores, landing pages and
             interactive websites where visual identity and
             thoughtful functionality work together.
-
           </p>
-
 
           <div class="hero-actions">
 
             <a href="#work" class="btn">
               Explore my work
             </a>
-
 
             <a href="#about" class="text-link">
               More about me
@@ -1065,7 +859,6 @@
         </div>
 
 
-
         <div class="hero-visual">
 
           <img
@@ -1074,7 +867,6 @@
           >
 
           <div class="hero-overlay"></div>
-
 
           <div class="hero-photo-copy">
 
@@ -1090,33 +882,27 @@
 
         </div>
 
-
       </div>
 
     </section>
 
 
-
-    <!-- =======================================================
-         ABOUT
-    ======================================================== -->
+    <!-- ABOUT -->
 
     <section class="section about" id="about">
 
       <div class="container about-grid">
-
 
         <div class="about-photo-wrap">
 
           <div class="about-photo">
 
             <img
-              src="7.jpg"
+              src="IMG_7637.JPG"
               alt="Ilona Shahbazyan"
             >
 
           </div>
-
 
           <div class="about-photo-note">
             Hi, I'm Ilona.
@@ -1125,95 +911,58 @@
         </div>
 
 
-
         <div class="about-content">
 
           <p class="eyebrow">
             About Me
           </p>
 
-
           <p class="about-large">
-
             I believe every project deserves
             its own visual language.
-
           </p>
 
-
           <p>
-
             I create digital experiences around the identity
             and purpose of each project rather than forcing
             every website into the same visual formula.
-
           </p>
 
-
           <p>
-
             My work ranges from Shopify e-commerce and
             landing pages to custom interactive experiences.
             I combine visual design with front-end implementation,
             focusing on hierarchy, responsive layouts,
             interaction and the details that make a website
             feel considered.
-
           </p>
-
 
           <div class="skill-list">
 
-            <span class="skill">
-              Shopify
-            </span>
-
-            <span class="skill">
-              Liquid
-            </span>
-
-            <span class="skill">
-              HTML
-            </span>
-
-            <span class="skill">
-              CSS
-            </span>
-
-            <span class="skill">
-              JavaScript
-            </span>
-
-            <span class="skill">
-              Responsive Design
-            </span>
-
-            <span class="skill">
-              UI / UX
-            </span>
+            <span class="skill">Shopify</span>
+            <span class="skill">Liquid</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Responsive Design</span>
+            <span class="skill">UI / UX</span>
 
           </div>
 
         </div>
-
 
       </div>
 
     </section>
 
 
-
-    <!-- =======================================================
-         SERVICES
-    ======================================================== -->
+    <!-- SERVICES -->
 
     <section class="section" id="services">
 
       <div class="container">
 
-
         <div class="services-header">
-
 
           <div>
 
@@ -1221,34 +970,24 @@
               What I Do
             </p>
 
-
             <h2 class="section-title">
-
               From concept to<br>
               digital experience.
-
             </h2>
 
           </div>
 
-
-
           <p class="section-description">
-
             I work across e-commerce, landing pages and
             interactive web experiences with a focus on
             visual identity, usability and responsive
             implementation.
-
           </p>
-
 
         </div>
 
 
-
         <div class="services-grid">
-
 
           <article class="service-card">
 
@@ -1256,23 +995,18 @@
               01
             </p>
 
-
             <h3>
               Shopify Development
             </h3>
 
-
             <p>
-
               Custom storefront experiences with thoughtful
               product presentation, responsive layouts and
               functionality designed around the identity
               of the brand.
-
             </p>
 
           </article>
-
 
 
           <article class="service-card">
@@ -1281,23 +1015,18 @@
               02
             </p>
 
-
             <h3>
               Landing Pages
             </h3>
 
-
             <p>
-
               Focused digital experiences using strong
               hierarchy, imagery and interface design
               to communicate clearly and guide users
               naturally.
-
             </p>
 
           </article>
-
 
 
           <article class="service-card">
@@ -1306,73 +1035,53 @@
               03
             </p>
 
-
             <h3>
               Interactive Web Design
             </h3>
 
-
             <p>
-
               Custom web experiences with responsive
               layouts, visual storytelling and interactive
               elements tailored to the purpose of each
               project.
-
             </p>
 
           </article>
 
-
         </div>
-
 
       </div>
 
     </section>
 
 
-
-    <!-- =======================================================
-         SELECTED WORK
-    ======================================================== -->
+    <!-- SELECTED WORK -->
 
     <section class="section work" id="work">
 
       <div class="container">
 
-
         <p class="eyebrow">
           Selected Work
         </p>
 
-
         <h2 class="section-title">
-
           Different projects.<br>
           Different identities.
-
         </h2>
 
-
         <p class="section-description">
-
           Selected work across e-commerce, service-based
           web design and interactive digital experiences.
-
         </p>
-
 
 
         <div class="projects">
 
 
-          <!-- =================================================
-               LA CASA
-          ================================================== -->
+          <!-- LA CASA -->
 
           <article class="project">
-
 
             <div class="project-image">
 
@@ -1384,58 +1093,36 @@
             </div>
 
 
-
             <div class="project-content">
 
               <p class="project-number">
                 01 · Shopify
               </p>
 
-
               <h3 class="project-title">
                 La Casa
               </h3>
-
 
               <p class="project-category">
                 E-commerce · Furniture & Interiors
               </p>
 
-
               <p class="project-description">
-
                 A premium furniture e-commerce experience
                 built in Shopify, combining an editorial
                 visual direction with custom storefront
                 functionality and detailed product discovery.
-
               </p>
-
 
               <div class="project-tags">
 
-                <span class="project-tag">
-                  Shopify
-                </span>
-
-                <span class="project-tag">
-                  Liquid
-                </span>
-
-                <span class="project-tag">
-                  CSS
-                </span>
-
-                <span class="project-tag">
-                  E-commerce
-                </span>
-
-                <span class="project-tag">
-                  Responsive
-                </span>
+                <span class="project-tag">Shopify</span>
+                <span class="project-tag">Liquid</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">E-commerce</span>
+                <span class="project-tag">Responsive</span>
 
               </div>
-
 
               <a
                 href="https://ilona-shahbazyan-emyc9p31.myshopify.com"
@@ -1446,7 +1133,6 @@
                 View live store →
               </a>
 
-
               <p class="store-note">
                 Portfolio store · Storefront access password:
                 <strong>Ilona</strong>
@@ -1454,27 +1140,21 @@
 
             </div>
 
-
           </article>
 
 
-
-          <!-- =================================================
-               LUMÉ
-          ================================================== -->
+          <!-- LUMÉ -->
 
           <article class="project">
-
 
             <div class="project-image">
 
               <img
                 src="lume2.png"
-                alt="Lumé Dental website project"
+                alt="Lumé dental website project"
               >
 
             </div>
-
 
 
             <div class="project-content">
@@ -1483,48 +1163,30 @@
                 02 · Landing Page
               </p>
 
-
               <h3 class="project-title">
                 Lumé
               </h3>
-
 
               <p class="project-category">
                 Web Design · Dental Practice
               </p>
 
-
               <p class="project-description">
-
                 A modern digital concept for a premium
                 dental practice. Lumé explores clarity,
                 trust and calm through a clean visual
                 system, strong hierarchy and a considered
                 user journey.
-
               </p>
-
 
               <div class="project-tags">
 
-                <span class="project-tag">
-                  HTML
-                </span>
-
-                <span class="project-tag">
-                  CSS
-                </span>
-
-                <span class="project-tag">
-                  UI Design
-                </span>
-
-                <span class="project-tag">
-                  Responsive
-                </span>
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">UI Design</span>
+                <span class="project-tag">Responsive</span>
 
               </div>
-
 
               <a
                 href="https://ilonashahbazyan.github.io/dental-clinic-landing-page/"
@@ -1537,17 +1199,12 @@
 
             </div>
 
-
           </article>
 
 
-
-          <!-- =================================================
-               FÊTE
-          ================================================== -->
+          <!-- FÊTE -->
 
           <article class="project">
-
 
             <div class="project-image">
 
@@ -1559,56 +1216,37 @@
             </div>
 
 
-
             <div class="project-content">
 
               <p class="project-number">
                 03 · Interactive Experience
               </p>
 
-
               <h3 class="project-title">
                 Fête
               </h3>
-
 
               <p class="project-category">
                 Digital Invitations · Event Web Design
               </p>
 
-
               <p class="project-description">
-
                 A digital invitation concept designed
                 around personal, interactive event
                 experiences. The featured birthday
                 invitation combines visual storytelling,
                 a live countdown, event schedule,
                 dress-code guidance and RSVP interaction.
-
               </p>
-
 
               <div class="project-tags">
 
-                <span class="project-tag">
-                  HTML
-                </span>
-
-                <span class="project-tag">
-                  CSS
-                </span>
-
-                <span class="project-tag">
-                  JavaScript
-                </span>
-
-                <span class="project-tag">
-                  Interactive UI
-                </span>
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Interactive UI</span>
 
               </div>
-
 
               <a
                 href="https://ilonashahbazyan.github.io/marias-birthday-invitation/"
@@ -1621,32 +1259,37 @@
 
             </div>
 
-
           </article>
 
-
         </div>
-
 
       </div>
 
     </section>
 
 
-
-    <!-- =======================================================
-         APPROACH
-    ======================================================== -->
+    <!-- APPROACH -->
 
     <section class="section approach">
 
       <div class="container approach-grid">
 
+        <div class="approach-visual">
 
-        <div class="approach-number">
-          03
+          <div class="approach-image">
+
+            <img
+              src="03.png"
+              alt="Creative design process and visual direction"
+            >
+
+          </div>
+
+          <div class="approach-number">
+            03
+          </div>
+
         </div>
-
 
 
         <div class="approach-content">
@@ -1655,67 +1298,48 @@
             My Approach
           </p>
 
-
           <h2>
-
             The aesthetic changes.
             The attention to detail doesn't.
-
           </h2>
 
-
           <p>
-
             La Casa, Lumé and Fête deliberately speak three
             different visual languages. I approach each project
             around its audience, purpose and identity — because
             good design shouldn't make every brand look like
             the designer. It should make the brand feel more
             like itself.
-
           </p>
 
         </div>
-
 
       </div>
 
     </section>
 
 
-
-    <!-- =======================================================
-         CONTACT
-    ======================================================== -->
+    <!-- CONTACT -->
 
     <section class="section contact" id="contact">
 
       <div class="container">
 
-
         <div class="contact-box">
-
 
           <p class="eyebrow">
             Let's Work Together
           </p>
 
-
           <h2 class="section-title">
-
             Have an idea?<br>
             Let's build it.
-
           </h2>
 
-
           <p class="section-description">
-
             I'm open to Shopify, web design, landing-page
             and custom digital projects.
-
           </p>
-
 
           <a
             href="mailto:i.shahbazyan16@gmail.com?subject=Website%20Project%20Inquiry"
@@ -1724,7 +1348,6 @@
             Get in touch
           </a>
 
-
           <a
             href="mailto:i.shahbazyan16@gmail.com"
             class="contact-email"
@@ -1732,22 +1355,16 @@
             i.shahbazyan16@gmail.com
           </a>
 
-
         </div>
-
 
       </div>
 
     </section>
 
-
   </main>
 
 
-
-  <!-- =========================================================
-       FOOTER
-  ========================================================= -->
+  <!-- FOOTER -->
 
   <footer>
 
@@ -1764,7 +1381,6 @@
     </div>
 
   </footer>
-
 
 </body>
 </html>
