@@ -88,6 +88,7 @@
       line-height: 1.8;
     }
 
+
     /* NAVIGATION */
 
     header {
@@ -130,6 +131,7 @@
       color: var(--accent);
     }
 
+
     /* BUTTONS */
 
     .btn {
@@ -159,6 +161,7 @@
       font-weight: 500;
       border-bottom: 1px solid currentColor;
     }
+
 
     /* HERO */
 
@@ -258,6 +261,7 @@
       line-height: 1.15;
     }
 
+
     /* ABOUT */
 
     .about {
@@ -332,6 +336,7 @@
       font-size: 0.82rem;
     }
 
+
     /* SERVICES */
 
     .services-header {
@@ -382,6 +387,7 @@
       color: var(--muted);
       line-height: 1.75;
     }
+
 
     /* WORK */
 
@@ -513,6 +519,7 @@
       font-weight: 500;
     }
 
+
     /* APPROACH */
 
     .approach {
@@ -531,7 +538,6 @@
     }
 
     .approach-image {
-      position: relative;
       overflow: hidden;
       border-radius: 28px;
       aspect-ratio: 4 / 5;
@@ -551,18 +557,6 @@
       transform: scale(1.025);
     }
 
-    .approach-number {
-      position: absolute;
-      left: -55px;
-      bottom: -40px;
-      z-index: 2;
-      font-family: "Playfair Display", serif;
-      font-size: clamp(7rem, 12vw, 11rem);
-      line-height: 0.8;
-      color: rgba(108, 79, 61, 0.16);
-      pointer-events: none;
-    }
-
     .approach-content h2 {
       font-family: "Playfair Display", serif;
       font-size: clamp(2.3rem, 5vw, 4.2rem);
@@ -576,6 +570,7 @@
       color: var(--muted);
       line-height: 1.85;
     }
+
 
     /* CONTACT */
 
@@ -604,6 +599,7 @@
       color: var(--accent);
     }
 
+
     /* FOOTER */
 
     footer {
@@ -619,6 +615,7 @@
       color: var(--muted);
       font-size: 0.87rem;
     }
+
 
     /* RESPONSIVE */
 
@@ -681,12 +678,8 @@
       .approach-image {
         aspect-ratio: 5 / 4;
       }
-
-      .approach-number {
-        left: -20px;
-        bottom: -25px;
-      }
     }
+
 
     @media (max-width: 700px) {
 
@@ -733,16 +726,11 @@
       }
 
       .approach-grid {
-        gap: 65px;
+        gap: 55px;
       }
 
       .approach-image {
         aspect-ratio: 1 / 1;
-      }
-
-      .approach-number {
-        left: 15px;
-        bottom: -25px;
       }
 
       .contact-box {
@@ -754,6 +742,7 @@
         text-align: center;
       }
     }
+
 
     @media (max-width: 480px) {
 
@@ -775,20 +764,20 @@
       .hero-photo-copy p {
         font-size: 1.6rem;
       }
-
-      .approach-number {
-        font-size: 6.5rem;
-      }
     }
   </style>
 </head>
 
+
 <body>
+
 
   <!-- NAVIGATION -->
 
   <header>
+
     <div class="container">
+
       <nav>
 
         <a href="#home" class="logo">
@@ -796,6 +785,7 @@
         </a>
 
         <ul class="nav-links">
+
           <li>
             <a href="#about">About</a>
           </li>
@@ -811,14 +801,19 @@
           <li>
             <a href="#contact">Contact</a>
           </li>
+
         </ul>
 
       </nav>
+
     </div>
+
   </header>
 
 
+
   <main>
+
 
     <!-- HERO -->
 
@@ -885,6 +880,7 @@
       </div>
 
     </section>
+
 
 
     <!-- ABOUT -->
@@ -956,6 +952,7 @@
     </section>
 
 
+
     <!-- SERVICES -->
 
     <section class="section" id="services">
@@ -991,9 +988,7 @@
 
           <article class="service-card">
 
-            <p class="service-number">
-              01
-            </p>
+            <p class="service-number">01</p>
 
             <h3>
               Shopify Development
@@ -1011,9 +1006,7 @@
 
           <article class="service-card">
 
-            <p class="service-number">
-              02
-            </p>
+            <p class="service-number">02</p>
 
             <h3>
               Landing Pages
@@ -1031,9 +1024,7 @@
 
           <article class="service-card">
 
-            <p class="service-number">
-              03
-            </p>
+            <p class="service-number">03</p>
 
             <h3>
               Interactive Web Design
@@ -1053,6 +1044,7 @@
       </div>
 
     </section>
+
 
 
     <!-- SELECTED WORK -->
@@ -1143,6 +1135,7 @@
           </article>
 
 
+
           <!-- LUMÉ -->
 
           <article class="project">
@@ -1200,6 +1193,7 @@
             </div>
 
           </article>
+
 
 
           <!-- FÊTE -->
@@ -1268,25 +1262,23 @@
     </section>
 
 
+
     <!-- APPROACH -->
 
     <section class="section approach">
 
       <div class="container approach-grid">
 
+
         <div class="approach-visual">
 
           <div class="approach-image">
 
             <img
-              src="03.png"
-              alt="Creative design process and visual direction"
+              src="04.png"
+              alt="Creative workspace and design process"
             >
 
-          </div>
-
-          <div class="approach-number">
-            03
           </div>
 
         </div>
@@ -1317,6 +1309,7 @@
       </div>
 
     </section>
+
 
 
     <!-- CONTACT -->
@@ -1364,6 +1357,7 @@
   </main>
 
 
+
   <!-- FOOTER -->
 
   <footer>
@@ -1381,6 +1375,7 @@
     </div>
 
   </footer>
+
 
 </body>
 </html>
